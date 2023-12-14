@@ -1,7 +1,7 @@
 from flask import Flask #Aqui se importan las librerias
 
 app = Flask(__name__) #Aqui se crea una instancia que sea igual a la variable app, esto representa la app de flask
-#Con el de arriba indicamos que este archivo sera nuestra aplicacion, y todos los recursos los buscara en este programa, por asi
+#Con el de arriba indicamos que este archivo sera nuestra aplicacion, y todos los recursos los buscara en esta carpeta, por asi
 #decirle le indicamos que este es nuestro main, por ende aqui deberia de estar cualquier cosa usada en el programa 
 
 @app.route('/hello') #Aqui se crea una ruta,lo que hay entre parentesis indica que esta es la ruta principal, nos arrojara un url que tendra
@@ -60,3 +60,21 @@ def Datos1(Name1 = None , Age1 = None):#Aqui definimos las variables en 0, lo qu
 
     else:#Esta es la URL completa ya que aqui los das valores se les asigno valor mediante la url y asi ninguno vale none
         return f'<h1>Hola {Name1}, Tu edad al doble es {Age1 * 2} </h1>'
+
+#A continuacion se coloca un error que puede suceder que seria no mantener segruo nuestro sitio/aplicacion
+#ya que aqui se puede hacer uso de comando html para hacer cosas no deseadas en la aplicacion, como alertas
+#y cosas del estilo, por ejemplo con el codigo comentado a continuacion, podriamos recibir una variable como 
+#<script>alert("CHUPALA")</script>, haciendo que salten alertas no esperadas, asi arruinando el programa
+
+#@app.route('/code/<path:code>')
+#def code(code):
+#    return f'<code>{code}</code>'
+
+
+#Para evitar lo anterior se puede hacer uso de los escapes de html que es mas que una buena practica lo mas necesario
+#para evitar cosas no deseadas, para esto importamos escape desde markupsafe, esto ya viene instalado cuando instalamos
+#Flask, asi pues importada en el codigo la ponemos antes de returnar la funcion
+from markupsafe import escape
+@app.route('/code/<path:code>')
+def code(code):
+    return f'<code>{escape(code)}</code>'
