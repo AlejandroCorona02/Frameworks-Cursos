@@ -1,0 +1,22 @@
+Desde CMD
+
+"mkdir" -- Creamos carpetas en la direccion que estemos
+
+"cd" -- para movernos entre carpetas, seguido de esto puede ir el nombre de la
+carpeta y asi entramos, o dos piuntos seguidos (..) para regresar
+
+"Python -m venv "nombre de entorno virtual"" -- Con este comando creamos un
+entorno virtual en la carpeta que  estemos en ese momento
+
+"nombre de entorno virtual\Scripts" -- Esta es mas que nada una direccion que se
+crea al hacer el entonro virtual, una vez que llegues a la direccion se usa 
+activate,si cd, para activar el entorno virtual
+
+"deactivate" -- Se usa donde sea para desactivar el entorno virtual
+
+"code ." -- para abrir la carpeta en donde estemos pero en visual studio
+
+"flask --app NombreDelArchivoPython run" -- Esto se escribe en el cmd pero en la 
+direccion que se encuentre nuestro programa, asi se ejecutara y si hay errores en
+el mismo cmd nos dira, si por el contrario todo esta bien nos dara una direccion
+ip a la que nos conectaremos desde un servidor local que se creara
