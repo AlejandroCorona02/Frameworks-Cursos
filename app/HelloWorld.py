@@ -40,3 +40,23 @@ def Edades(Edad):
 @app.route('/Datos/<Nombre>/<int:Age>')
 def Datos(Nombre, Age):
     return f'<h1>Hola {Nombre}, Tu edad es {Age}? </h1>'
+
+
+#Ahora si lo que queremos es dependiendo al url, arrojar un dato podemos hacer lo siguiente, se les dara
+#nombre a las url para mencionarlas mas adelante y estas tengan mas sentido
+@app.route('/Datos1')#URL SOLA
+@app.route('/Datos1/<Name1>')#URL NOMBRE
+@app.route('/Datos1/<Name1>/<int:Age1>')#URL COMPLETA
+def Datos1(Name1 = None , Age1 = None):#Aqui definimos las variables en 0, lo que quiere decir que si no les damos 
+#valor tendran un valor nulo y en base a esto podemos comenzar a trabajar
+
+    if Name1 == None and Age1 == None:#En este caso es como si nos fueramos a la url Sola, ya que en esta no
+#cambiamos el valor de las varables por ende siempre son none
+        return '<h1>Hola mundo :)</h1>'
+    
+    elif Age1 == None:#Aqui es como si estuvieramos en la url Nombre, esto por que al cambiar el nombre age 
+#es la unica variable que aun tiene le mismo valor
+        return f'<h1>Hola {Name1} :)</h1>'
+
+    else:#Esta es la URL completa ya que aqui los das valores se les asigno valor mediante la url y asi ninguno vale none
+        return f'<h1>Hola {Name1}, Tu edad al doble es {Age1 * 2} </h1>'
