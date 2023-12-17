@@ -1,0 +1,16 @@
+<!--Lo que se hace en este codigo es tratar de poner lo mas general en las plantillas html para que en futuros 
+archivos no sea necesario repetirlo y solo coloquemos lo necesario-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi primera pagina - {% block title %}{% endblock%}</title><!-- Con lo que hicimos dentro de las
+        llaves indicamos que existe un bloque, que en este caso es de titulo, en la primera llave le damos un 
+        nombre y en la segunda simplemente cerramos-->
+    </head>    
+    <body>
+        {% block content %}<!-- Aqui igual funciona de la misma manera-->
+        
+        {% endblock%}
+    </body>
+
+    </html>

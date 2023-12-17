@@ -1,0 +1,35 @@
+{% extends 'Base.html' %}<!-- Con esto se hereda de la plantilla señalada, en este caso base-->
+{% block title %} Pagina de inicio {% endblock %} <!--Aqui el titulo sera dinamico por ende se coloca el 
+contenido Pagina de inicio, que se colocara sustituyendo los bloques que existan de title por este 
+contenido-->
+{% block content %}
+<h1>Hola mundo</h1>
+        {% if  name == 'Alex' %}<!-- Para haceer uso de estructureas de datos, (if, case, while, etc se coloca entre
+            llave y porcentaje para lograr que haga una comparacion, aqui solo se valida que exista name)-->
+        <p>Hola,  {{ name }}</p> <!-- Aqui hacemos uso de la variable que se indica en el programa main
+        por lo que solo se coloca el nombre de la variable entre llaves dobles y es todo-->
+        {% elif name == 'David' %}
+        <p>Hola,  {{ name | upper }}</p><!--Existen los filtros que nos permiten modificar la informacion antes de 
+        mostrarla en pantalla, en este caso el filtro que usamos es upper, el cual nos srive para poner en 
+    mayucsculas todas las letras de la variable asi que en este caso david saldra todo en mayusculas-->
+        {% else %}
+    <p>Hola tu!</p>
+    {% endif %}<!-- Es importante que para cualquier estructura de datos se indique donde acaba en el caso
+    de if se usa esta linea para que indique donde acaba el if-->
+    
+    <!-- A continuacion es otro ejemplo de estructura de datos pero ahora con un for-->
+    <h2>Amiguitos</h2>
+    <ul>
+    {% for friend in Friends | reverse %}<!-- Aqui colocamos este filtro para mas que nada lo que haga es
+         invertir la lista por lo que si el pirmero en esta lista es alan, ahora sera camis el primero -->
+    <li>{{friend}}</li>
+    {%endfor%}
+
+    </ul>
+    <p>La fecha de hoy es {{Date | today}}</p>
+    <p>Repetimos la palabra {{repeat('Hola ',5)}}</p>
+    {% endblock %}
+
+    <!--Aqui es importante que se vea de la siguiente manera, la plantilla heredada como tal se estara usando
+    pero para cambiar el contenido se usan los bloques estos simplemente sustituyen a los de la base por los 
+datos que se tengan contenidos entre los bloques del otro programa que usa como herencia-->

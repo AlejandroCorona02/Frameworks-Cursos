@@ -29,3 +29,8 @@ Un error que puede suceder que seria no mantener segruo nuestro sitio/aplicacion
 
 ## Plantillas con jinja2 y html
 Es un motor de plantillas para python para generar contenido html, xml y datos en tiempo de ejecucion, esta libreria ya se encuentra una vez que instales flask, con esto podemos hacer herencia de plantillas
+
+## HTML
+A partir de aqui el curso toma otra ruta que mas que nada lo que hace explicar parte de html y como esta puede ser utilizada para crear nuestra pagina, nos habla de como con las librerias podemos llegar a hacer uso de archivos html como tal pero no solo se queda ahi ya que esta libreria tambien hace uso de los llamados bloques lo cuales mas que nada sirven para no tener que repetir cierta informacion o sustituir cosas que parezcan redundantes, tambien nos explica como podemos hacer uso de las estructuras de datos, como lo son el if, for, etc.
+
+Para editar lo que se va a mostrar en la pantalla existen los filtros estas pueden ser utiles para modificar la informacion segun lo que vayamos a necesitar
