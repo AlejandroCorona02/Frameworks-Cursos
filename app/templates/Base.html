@@ -12,6 +12,8 @@ archivos no sea necesario repetirlo y solo coloquemos lo necesario-->
             <ul>
                 <li><a href="{{ url_for('Index') }}" > Home </a></li>
                 <li><a href="{{ url_for('Prueba') }}" > Prueba </a></li>
+                <li><a href="{{ url_for('Contenido', data = My_data) }}" > Variables </a></li>
+                <li><a href="{{ url_for('code',code = 'print(code)') }}" > Code </a></li>
             </ul>
         </nav>
         {% block content %}<!-- Aqui igual funciona de la misma manera-->

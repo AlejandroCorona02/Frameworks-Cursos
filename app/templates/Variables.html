@@ -1,0 +1,31 @@
+<!--Aqui lo que se quiere lograr es que hagamos la misma funcion que se 
+hizo en el mismo programa de if´s anidados en distintos url pero ahora 
+las condiciones estaran en el html y se enviaran con estructuras de 
+datos que se entiende por una carpeta con variables, hasta ahora-->
+
+{% extends 'Base.html' %}
+{% block title %} Variables {% endblock %}
+
+{% block content %}
+<!--Para hacer uso de la carpeta anteriormente mencionada pondremos el 
+nombre de esta antes la variable como tal esto separado por un punto asi
+el codigo entendera que nos referimos a esa variabble en esa carpeta,
+tenemos que recordar que cuando le decimos al py que usaremos este html
+indicamos las variables y en este caso se coloca una variable que es 
+igual a nuestra carpeta, pondremos el nombre de esta variable y no de 
+la carpeta como tal-->
+
+{% if data.Name is none and data.Age is none and data.email is none %}
+    <h1>Hello World!</h1>
+
+{% elif data.Age is none and data.email is none %}
+    <h1>Hello {{data.Name}}</h1>
+
+{% elif data.email is none %}
+    <h1>Hello {{data.Name}} your age is {{data.Age}} </h1>
+
+{% else %}
+    <h1>Hola {{data.Name}}, Tu edad al doble es {{data.Age * 2}} and your email is {{data.email}}</h1>
+
+    {%endif%}
+{% endblock %}
