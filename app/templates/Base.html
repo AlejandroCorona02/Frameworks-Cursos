@@ -6,6 +6,7 @@ archivos no sea necesario repetirlo y solo coloquemos lo necesario-->
         <title>Mi primera pagina - {% block title %}{% endblock%}</title><!-- Con lo que hicimos dentro de las
         llaves indicamos que existe un bloque, que en este caso es de titulo, en la primera llave le damos un 
         nombre y en la segunda simplemente cerramos-->
+            <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
     </head>    
     <body>
         <nav>
