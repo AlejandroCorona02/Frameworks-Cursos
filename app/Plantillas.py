@@ -38,3 +38,4 @@ def Index():
 #nombre que hay entre parentesis es el html que queremos mostrar y eso seria todo, aclarando que este html 
 #debe estar dentro de la carpeta templates, despues de la coma ponemos el nombre de la variable asigandosela
 #asi misma ya que no podemos colocarla de forma directa
+

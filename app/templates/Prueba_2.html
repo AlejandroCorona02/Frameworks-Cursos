@@ -1,0 +1,16 @@
+{% extends 'Base.html' %}
+{% block title %} Pagina 1 {% endblock %}
+
+{% block content %}
+
+<h1>Hola mundo</h1>
+        {% if  name == 'Alex' %}
+            
+        <p>Hola,  {{ name }}</p>
+        {% elif name == 'David' %}
+        <p>Hola,  {{ name | upper }}</p>
+        {% else %}
+    <p>Hola tu!</p>
+    {% endif %}
+
+{% endblock %}

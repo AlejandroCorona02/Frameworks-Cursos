@@ -8,6 +8,12 @@ archivos no sea necesario repetirlo y solo coloquemos lo necesario-->
         nombre y en la segunda simplemente cerramos-->
     </head>    
     <body>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('Index') }}" > Home </a></li>
+                <li><a href="{{ url_for('Prueba') }}" > Prueba </a></li>
+            </ul>
+        </nav>
         {% block content %}<!-- Aqui igual funciona de la misma manera-->
         
         {% endblock%}
