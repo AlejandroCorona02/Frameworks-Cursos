@@ -1,0 +1,30 @@
+{% extends 'Base.html' %}
+{% block title %} Registro de usuarios {% endblock %} 
+
+{% block content %}
+<h1>Registro de usuario</h1>
+
+<form action=""><!--Con esta linea lo que se hace es 
+abrir un formulario por lo que se encuentre dentro de 
+sera para dicho formulario-->
+    <label for="username">Usuario</label><!--Esta linea crea 
+una leyenda a su izquierda para saber a que se refiere el 
+campo de texto, para saber a quien adjudicarla se coloca
+la etiqueta username, asi se llama nuestro campo de texto
+creado a continuacion-->
+    <input type="text" name="username" id="username"><!--Aqui
+se generan el campo de texto, el type indica que tipo de 
+variable tomara, con text indicamos que seran palabras,name 
+y id seran para ubicarlos -->
+    <br><br>
+    
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" id="password"> <!--
+En la linea de arriba indica lo mismo que la anterior pero el
+type es password por lo que sera oculto a la hora de escribir-->   
+    <br><br>
+
+    <input type="submit" value="Registrar">
+
+</form>
+{% endblock %}

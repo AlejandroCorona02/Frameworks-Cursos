@@ -42,3 +42,12 @@ Bien ahora una vez visto esto podemos comenzar a hablar acerca de las variables 
 
 ## Archivos estaticos
 Para esto lo que principalmente aborda es la parte de la estetica de la pagina popr lo que haremos uso de los archivos css para que se vean mas agradables, para eso se crea una carpeta llamada static y dentro de esta otra que se llame css y aqui dentro creamos los archivos css para que se vea agradable, es importante que sean estas carpetas debido a que el programa al mencionarlo buscara estas carpetas ya que en la base de html crearemos una ruta que nos redirija exactamente a esas carpetas, se hara mas facil el trabajo debido a que no tendremos que poner todo el link de direccion del archivo css cada que lo ncesitemos solo pondremos su nombre en nuestro archivo html, es necesario aprender acerca de css y de todas las funciones que busquemos para este, ya que son bastantes y se combinan con distintas cosas
+
+## Formularios
+Es lo mas importante del curso ya que nos permite enviar y6 recibir datos del usuario, en flask podemos hacer uso de los html y los css para crear formularios pero como en todo pára facilitarnos la vida y la existencia es mejor hacer uso de las bibliotecas que ya viene con muchos pasos mas sencillos ademas de tener la validacion de los datos y la proteccion contra ataques. 
+Los formularios son importantes ya que con esto es como podremos realizar las busquedas en la misma aplicacion, o se podria poner un registro de usuario, la idea es que se puden obtener datos con los que se puede trabajar
+
+**Para empezar**
+Creamos una carpeta llamada **auth** en la carpeta donde tengamos los demas archivos HTML, seguido de ahi dentro de la carpeta vamos a crear un html llamado registro, para que aqui los usuarios se registren
+
+De aqui lo que se hace s crear un fortmulario con html que realmente es sencillo solo se usa 

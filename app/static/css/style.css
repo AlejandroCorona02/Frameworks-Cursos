@@ -8,6 +8,14 @@ body { /* Aqui con la marca de body lo que hacemos es llamar
 }
 
 h1 {
-    color:red;/*Este cambia el color de las letras por el 
+    color:#11ff99;/*Este cambia el color de las letras por el 
     que queramos*/
+}
+
+li{
+    Color:rgb(100, 120, 200);
+}
+
+form {
+    color:#11ff55;
 }
