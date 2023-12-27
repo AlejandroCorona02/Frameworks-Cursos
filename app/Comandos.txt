@@ -21,6 +21,6 @@ direccion que se encuentre nuestro programa, asi se ejecutara y si hay errores e
 el mismo cmd nos dira, si por el contrario todo esta bien nos dara una direccion
 ip a la que nos conectaremos desde un servidor local que se creara
 
-"flask --app NombreDelArchivoPython run" -- Esto corre el programa en modo
+"flask --app NombreDelArchivoPython --debug run" -- Esto corre el programa en modo
 debugger lo que nos permite ver los errores en tiempo real sin necesidad de
 tirar y alzar el servidor cada que sea necesario

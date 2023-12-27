@@ -46,7 +46,7 @@ def Prueba():
 @app.route('/Contenido/<Name>')
 @app.route('/Contenido/<Name>/<int:Age>')
 @app.route('/Contenido/<Name>/<int:Age>/<email>')
-def Contenido(Name = 'Alex' , Age = '21', email = 'Alvyajalo@ajskjsa'):
+def Contenido(Name = 'Alex' , Age = 21, email = 'Alvyajalo@ajskjsa'):
     #A esto se le llama estructura de datos
     My_data = { #Este comenta el curso es un diccionario una especie de 
         #almacenamiento de variables que aqui se obtienen y son enviadas
