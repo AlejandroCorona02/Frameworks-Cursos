@@ -4,7 +4,7 @@
 #se encuentran en el archivo Rutas.py
 
 
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 app = Flask(__name__)
 
 
@@ -61,6 +61,24 @@ from markupsafe import escape
 def code(code):
     return render_template('Prueba_2.html')
 
-@app.route('/auth/Registro')
+@app.route('/auth/Registro', methods = ['GET', 'POST'])#por lo
+#que se hasta ahora post y get son para indicar que se reciben
+#y se envian  datos
 def Registro():
+    if request.method == 'POST':#Enviamos datos por ende se
+#usa el condicional para pregunar si los esta recibiendo, si
+#los recibe entonces pasara a hacer lo siguiente que en este 
+#solo sera imprimir las variables que son enviados
+        username = request.form['username']
+        password = request.form['password']
+        return f"Hola {username}, tu contraseña es {password}"
     return render_template('auth/Registro.html')
+
+
+@app.route('/auth/Registro2', methods = ['GET', 'POST'])
+def Registro2():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        return f"Hola {username}, tu contraseña es {password}"
+    return render_template('auth/Registro2.html')
