@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina WEB</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/estilos.css')}}">
+
+
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+
+            <nav class="nav">
+                <a href="{{ url_for('Prueba') }}" class="nav__i nav__items--cta">Contacto</a>
+
+                <a href="#" class="nav__i">Acerca de mi</a>
+                <a href="#" class="nav__i">Proyectos</a>
+            </nav>
+
+            <section class="hero__container">
+
+                <div class="hero__text">
+                    <h1 class="hero__title">Portafolio Prueba</h1>
+                    <h2 class="hero__subtitle">Cada dia mas cerca</h2>
+                    <A class="hero__cta">Conoceme!</A>
+                </div>
+
+            </section>
+
+        </div>
+        <div class="hero__wave" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.24,-10.34 C270.41,180.11 432.18,-94.22 512.24,82.41 L500.00,150.00 L0.82,168.27 Z" style="stroke: none; fill: #08f;"></path></svg></div>
+    </header>
+
+    <main>
+        <section class="presentation">
+            <img src="{{url_for('static',filename = 'img/1.jpg')}}" class="presentation__picture">
+            <h2 class="subtitle">Soy Alejandro Corona</h2>
+        </section>        
+    </main>
+    <a class="fa-brands fa-twitter" href="https://twitter.com/AlexCorona02"></a>
+    <a class="fa-brands fa-github" href="https://github.com/AlejandroCorona02"></a>
+    <a class="fa-brands fa-instagram"  href="https://www.instagram.com/alejandro_corona02/"></a>
+
+    <script src="https://kit.fontawesome.com/d0d107786b.js" crossorigin="anonymous"></script>
+</body>
+</html>
