@@ -1,0 +1,22 @@
+{% extends 'Base.html' %}
+{% block title %} Registro de usuarios {% endblock %} 
+
+{% block content %}
+<h1>Registro de usuario</h1>
+
+<form action="" method="post">
+{{ form.hidden_tag() }}<!--Aqui valida los datos y ejecuta el 
+metodo post, asi cuando validemos datos sabremos si son correctos
+o podremos trabajar on ellos en condicionales-->
+{{ form.username.label }}{{ form.username }}<br><br><!--Aqui
+solo son dos cosas se crea el label del campo de texto y 
+el campo de texto como tal, pero solo son variables que
+definimos en el archivo py-->
+{{ form.password.label }}{{ form.password }}<br><br>
+{{ form.submit }}
+</form>
+
+{% if error %}
+<p style = "color: red;"> {{ error }} </p>
+{% endif %}
+{% endblock %}
