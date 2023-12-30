@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
+:root{
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary:#667eea7e;
+    --color-secundary:#764ba298;
+    --boton-padding: 20px 40px;
+}
+
+.container{
+    width: 90%;
+    margin:0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 50px 0;
+}
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom:35px;
+}
+
+.hero{
+    height: 100vh;
+    background-image: var(--background), url('../img/11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
+}
+
+.hero .container{
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+
 }
