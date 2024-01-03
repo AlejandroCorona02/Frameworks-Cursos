@@ -328,14 +328,31 @@ body {
     display: inline-block;
     width: 60px;
     height: 60px;
-    color: #ffffff;
     text-align: center;
     border: 1px solid #ffffff;
-    border-radius: 50px;
+    border-radius: 50%;
+    color: #fff;
 }
 
-.footer__icons{
-    color: #fff;
+.footer__icon{
+    color: inherit;
     font-size: 30px;
     text-decoration: none;
+}
+
+.fab.footer__icon{
+    color:inherit;
+    line-height: 55px;
+ }
+
+ /*Responsive design*/
+
+@media screen and (max-width:800px){
+    :root{
+        --boton-padding: 18px 40px;
+    }
+    
+    .nav {
+        justify-content: space-around;
+    }
 }
