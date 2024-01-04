@@ -12,3 +12,68 @@ Ciudades = [
     'Colima'
     ]
 
+#Llegamos a la parte de diccionario que se refiere mas que nada a agrupar listas que esten
+#llenas de variables, y nos pone el siguiente ejemplo
+#Animales
+# pez = 'Pez espapda'
+# anfibio = 'Rana'
+# Reptil = 'Tortuga'
+# ave = 'Avestruz'
+# mamifero = 'Elefante'
+
+Animales = {
+    'pez': 'Pez espapda',
+    'anfibio': 'Rana',
+    'Reptil': 'Tortuga',
+    'ave': 'Avestruz',
+    'mamifero': 'Elefante'
+}
+
+#Para trabajar con colecciones es tan sencillo como solo seleccionar su numero asigando
+print(Ciudades[2])
+print(Animales['pez'])
+
+#ITERACIONES
+
+ingredientes = [
+    'Sal',
+    'Pimienta',
+    'Cebollino',
+    'Chile'
+]
+for ingrediente in ingredientes:
+    print(ingrediente)
+print('Asi me gustan las tortillas')
+
+
+print('Contando de 5 en 5 hasta 100')
+i = 5
+while i <= 100:
+    print(i)
+    i += 5
+print('Cuenta completa')
+
+import Modulos
+
+Modulos.mult(10,5)
+
+
+#Strings
+valor = input('Ingresa un numero')
+print(valor + ' Es mi numero xd')
+print('Cuando se multiplica el numero por 10 se obtiene:')
+valor_int= int(valor)
+print(valor_int * 10)
+
+nombre = 'david'
+apellido = 'cervantes'
+nota = 'Eres un ganador del oro'
+
+nombre_CAP = nombre.capitalize()
+apellido_CAP = apellido.capitalize()
+un = nota.find('un')
+texto = nota[8:]
+
+print(nombre_CAP + ' ' + apellido_CAP)
+print(un)
+print(texto)

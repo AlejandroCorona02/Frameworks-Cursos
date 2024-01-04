@@ -8,6 +8,11 @@ Son varias variables que sdean similares
 asi no hay muchas variables solo datos 
 relacionados, los datos pueden almacenmarse
 bajo la misma variable, sintaxis simplificada
+Para trabajar con estas colecciones es tan 
+sencillo como solo indicarle el numero de elemento
+en python podemos hacer listas de variables de 
+distinto tipo, ya sdean cadenas, numeros o 
+valores booleanos
 
 ## Tipos de coleccion: 
 -Lista:
@@ -20,4 +25,78 @@ bajo la misma variable, sintaxis simplificada
 
 ## Diccionarios
 Son etiquetas que podemos colocarle a las 
-colecciones
+colecciones, en si son listas pero en vez 
+de tener numero asignado para cada valor 
+tenemos un nombre que nosotros le podemos 
+otorgar
+
+## Colecciones mutables e inmutables
+Son aquellas listas que nos permiten cambiar 
+lo valores de estas, siendo que sean llamdas mutables
+tambien existen listas que una vez creadas es imposible 
+cambiar valores de sus listas a estas se les llama
+inmutables
+
+## ITERACIONES
+Repetir procedimiento hasta que se alcanza el fin
+se necesitan especificar los datos, se describe que 
+pasa con los datos en cada iteracion, y se idnica cuando 
+se detiene el ciclo
+**For**
+Se usa mucho paa hacer determinada tarea que requiera de 
+instrucciones repetitivads pero con distintos elementos
+de una lista, asi podremos usar cada uno de los valores
+para algo distinto
+
+## CODIGOS COMPARTIDOS
+Se pueden encontrar de distintos tipos, el primero que se 
+revisa es el modulo que es en si una variable o una funcion
+esto se logra a traves de lo que se conoce como importacion,
+tambien es comun usar distitnas funciones que vienen contempladas
+en un mismo modulo, a esto se le llama paqueteria o libreria,
+cuando el conjunto de codigo no se utiliza a la vez, si no de 
+manera especifica se le llama Framework
+
+**Acontinuacion**
+Como crear nuestros propios modulos, esto es tan sencillo
+como abrir otra hoja de archivo para que aqui este la funcion 
+a crear como modulo y despues se importa solo con el nombre 
+del archivo y para utilizar la funcion se coloca el nombre y
+se le pone un punto seguido del nombre de la funcion que deseamos
+utilizar del archivo importado y se coloca unos parentesis despues
+donde iran las variables que indique la funcion
+
+## LIBRERIAS Y FRAMEWORKS 
+Son colecciones de herramientas de software, una libreria nos da
+herramientas para construir una aplicacion, el framework tiene
+muchas decisiones ya tomadas, por lo que si al hacer un proyecto no 
+tenemos un enfoque especifico es mucho mejor usar librerias en cambio
+si tenemos un enfoque y existe un framework que se ajuste a nuestro
+proyecto es mucho mejor usar frameworks
+
+**Ejemplos de librerias** 
+TensorFlow y Pandas, estos se usan para el aprendizaje automatico,
+NumPy y SciPy, se usan para operaciones matematicas
+
+**Ejemplos de Frameworks**
+Django y Flask, son usados para la gestion de contenido Web
+
+## Strings
+**Concatenacion** en si son varias cadenas combinadas en una 
+unica cadena para esto se usa el signo de **"+"**, y si queremos
+multiplicarlo, sumarlo o lo que sea matematicos con este valor 
+necesitamos converetir el valor strin en un valor entero esto se
+hace con lo siguiente **valor_int= int(valor)**, solamente a una 
+variable se le asigna lo que este en int
+
+Las cadenas se pueden manipular de uno en uno en el ejemplo tomamos
+el nombre de una variable y con la funcion **.capitalize** lo que 
+hace es tomar el primer valor de la cadena y la convierte en mayuscula
+
+Aunque tambien existe otra funcion como **.find** que funciona para 
+saber en que posicion se encuentra cierta palabra
+
+Tambien existe la posibilidad de tomar caracteres de toda la palabra
+solamente poniendo el nombre de la variable y entre corchetes un numero
+seguido de dos puntos y despues otro numero algo asi **var[2:2]** esto 
+solo seria para indicar de donde empieza y donde acaba 
