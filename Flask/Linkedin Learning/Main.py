@@ -102,3 +102,24 @@ for linea in archivoN:
 print('\nTotal: ' + str(suma), file=archivoS)#Imprime un espacio y le concatena un string, y se imprime en el archivo
 archivoS.close()
 print('Salida completa')
+
+class Invitado:
+    'Clase común para todos los invitados'
+
+    def __init__(self, nombre, tiquetes):
+        self.nombre = nombre
+        self.tiquetes = tiquetes
+
+    def mostrarInvitado(self):
+        print('Nombre : {}, Tiquetes: {}'.format(self.nombre, self.tiquetes))
+
+    def agregarTiquete(self):
+        self.tiquetes += 1
+        print('{} el número de tiquetes ahora es {}'.format(self.nombre, self.tiquetes))
+
+invitado1 = Invitado('Alejandro C.',2)
+invitado2 = Invitado('Cyndy A.', 3)
+invitado1.mostrarInvitado()
+invitado2.mostrarInvitado()
+invitado2.agregarTiquete()
+invitado2.agregarTiquete()

@@ -45,3 +45,16 @@ valor_radio = float(radio)
 area_circulo = (valor_radio ** 2) * 3.14159
 print('El area del circulo es ')
 print(area_circulo)
+
+#Desafio 4 DEBUGGING
+def recomendacion_planta(cuidado):
+    if cuidado == 'bajo':
+        print('suculenta')
+    elif cuidado == 'medio':
+        print('pothos')
+    elif cuidado == 'alto':
+        print('orquídea')
+
+recomendacion_planta('bajo')
+recomendacion_planta('medio')
+recomendacion_planta('alto')

@@ -133,3 +133,20 @@ el resultado es diferente a lo que queremos
 Muchos IDE indican errores a la hora de escribir codigo, algunos como 
 VSCode indican con un subrayado de color, a esto se le conoce como **resaltado de sintaxis** , algunos tambien nos ayudan con el **autocompletado**, esto para simplificar 
 escribir codigo
+
+**Casos de prueba:** Mas que nada son comandos o scripts diseñados para probar una situacion especifica
+
+## Programacion orientada a objetos
+Son paradigmas para estructurar el codigo, la idea de este tipo de programacion es principalmente la idea de partir el programa en otros mas pequeños, estos objetos se comunican y esto hace mas facil de mantener y reutilizar el codigo
+En esta programacion cada objeto tiene atributos y comportamientos, **Los atributos** son datos o caracteristicas que tiene el objeto, y cada **comportamiento** es algo que el objeto puede hacer Los atributos se denominan **propiedades** y los comportamientos son **metodos** , ahora bien los metodos se pueden usar para trabajar con sus propiedades del mismo objeto, se crean objetos utilizando un modelo conocido como **clase** una clase describe los atributos y el comportamineto de un objeto
+
+**UTILIZACION DE CLASES**
+Es como dar un estandar en la creacion de los objetos para que todos tengan cosas similares, esto nos ayuda a evitar el codigo repetitivo, asi una cantidad de objetos comparten estos objetos y despues solo se personaliza cada uno de los objetos
+
+
+## MEMORIA
+Diferencia entre ram y rom, en los programas lo que no se ocupe necesita ser eliminado de la memoria cache, en algunos lenguajes es posible decidir cuales datos eliminar o no de la ram, a esto se le conoce como **gestion de memoria**, es dificil de implementar y puede causar fugas de memoria, por lo regular en videojuegos es muy implementado debido a su alto consumo de procesamiento, tambien existe **Recolector de basura**
+este busca e identifica lo que es posible eliminar de la memoria, pero todo esto en python no es realmente necesario ya que lo tiene incluido por defecto
+
+## MULTIHILOS
+Es hacer varias tareas en paralelo, a cada uno de estos se les conoce como hilo y al codigo que se escribe asi se le llama subproceso multiple cada uno de estos necesita bastante memoria de la PC por eso es necesario contemplar el rendimieno de esta, tambien se le llamda **codigo asincrono**
