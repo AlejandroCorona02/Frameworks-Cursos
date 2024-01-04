@@ -62,18 +62,43 @@ Modulos.mult(10,5)
 valor = input('Ingresa un numero')
 print(valor + ' Es mi numero xd')
 print('Cuando se multiplica el numero por 10 se obtiene:')
-valor_int= int(valor)
+valor_int= int(valor)#Esta funcion convierte la cadena de caracteres en enteros
 print(valor_int * 10)
 
 nombre = 'david'
 apellido = 'cervantes'
 nota = 'Eres un ganador del oro'
 
-nombre_CAP = nombre.capitalize()
+nombre_CAP = nombre.capitalize()#Coloca el primer caracter en mayusculas
 apellido_CAP = apellido.capitalize()
-un = nota.find('un')
-texto = nota[8:]
+un = nota.find('un')#Encuentra en que posicion empieza este valor
+texto = nota[8:]#Muestra los caracteres comprendidos entre estos valores
 
 print(nombre_CAP + ' ' + apellido_CAP)
 print(un)
 print(texto)
+
+#Expresiones
+import re
+
+codigo_5_digitos = '12345'
+codigo_9_digitos = '12345-6789'
+Telefono = '123-456-7890'
+
+regex_5_digitos = r'\d{5}'#Aqui le pedimos que buscara grupos de 5
+
+print(re.search(regex_5_digitos,codigo_5_digitos))#Con la funcion re hara la busqueda , le damos dos valores, cuanos buscara y en donde
+print(re.search(regex_5_digitos,codigo_9_digitos))
+print(re.search(regex_5_digitos,Telefono))
+
+# ARCHIVOS
+archivoN = open('valores.txt', 'rt')#Abre este archivo y con rt le decimos que solo sera de read(Lectura)
+archivoS = open('valores_totales.txt', 'wt')#hace lo mismo pero con wt indicamos que solo sera escritura, pero si no existe el archivo lo creara
+print('Procesando Entrada')
+suma = 0;
+for linea in archivoN:
+    suma += int(linea)
+    print(linea.rstrip(), file=archivoS)#Esta linea hace que cada linea que se lee en ArchivoN se vaya a ArchivoS
+print('\nTotal: ' + str(suma), file=archivoS)#Imprime un espacio y le concatena un string, y se imprime en el archivo
+archivoS.close()
+print('Salida completa')

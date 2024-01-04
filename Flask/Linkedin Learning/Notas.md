@@ -100,3 +100,36 @@ Tambien existe la posibilidad de tomar caracteres de toda la palabra
 solamente poniendo el nombre de la variable y entre corchetes un numero
 seguido de dos puntos y despues otro numero algo asi **var[2:2]** esto 
 solo seria para indicar de donde empieza y donde acaba 
+
+## Expresiones regulares
+Con estas mas que nada es para ecnontrar patrones en un texto similar
+a si quiseramos encontrar un grupo de tantos numeros de un numero de telefono
+como es usado en el ejemplo
+
+## Guias de estilo
+Se refiere a como se debe escribir el codigo y en este caso para python
+la mas famosa es **PEP-8**, mas que nada es una compilacion de todas las
+buenas practicas que se deberian de seguir asi como de conceptos basicos 
+del lenguaje, aunque es la mas comun no es la unica guia que existe ya que
+esta **La guia de estilo de python de google**, son ayuda para entender 
+codigo ajeno
+
+## PSEUCODIGO
+Descripcion de lo que intentas hacer en tu codigo, ayuda a realizar la 
+estructura del codigo y es para guiarse acerca de lo que se quiere conseguir
+
+## Archivos
+Los archivos se pueden abrir desde python y segun lo que se le indique estos 
+pueden ser leidos uno a uno o pueden ser sumados todos 
+
+## DEBUGGIN
+Depuracion: identificacion y arreglo de fallos
+**Hay 3 tipos de errores muy comunes:**
+**Error de sintaxis:** El codigo no coincide con las reglas del lenguaje
+**Error en tiempo de ejecucion:** Es cuando tiene buena sintaxis pero 
+quizas una variable aun no tiene valor asignado
+**Error de logica:** Funciona bien pero no es lo que se esperaba, 
+el resultado es diferente a lo que queremos
+Muchos IDE indican errores a la hora de escribir codigo, algunos como 
+VSCode indican con un subrayado de color, a esto se le conoce como **resaltado de sintaxis** , algunos tambien nos ayudan con el **autocompletado**, esto para simplificar 
+escribir codigo

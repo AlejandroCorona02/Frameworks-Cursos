@@ -38,3 +38,10 @@ frutas = [
 print('Nuestra seleccion de frutas')
 for fruta in frutas:
     print(fruta)
+
+#Desafio 3
+radio = input('Dame el valor del radio del circulo ')
+valor_radio = float(radio)
+area_circulo = (valor_radio ** 2) * 3.14159
+print('El area del circulo es ')
+print(area_circulo)
