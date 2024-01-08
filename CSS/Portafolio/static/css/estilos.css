@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary:#f82f4a7e;
+    --color-secundary:#460a1798;
+    --color-third:#ff5555;
+    --boton-padding: 20px 40px;
+}
+
+
+
+.top__cta__button{
+    text-align: right;
+    translate: 76px 7px;
+    color: #000;
+    text-decoration: none;      
+}
+
+.contactame{
+    border: 1px solid var(--color-secundary);
+    border-radius: 10%;
+    padding: 8px 8px;
+    width: 100px;
+    background:linear-gradient(165deg,var(--color-secundary) 10%,var(--color-primary) 100%);
+    color: #ffffff;
+    text-decoration: inherit;
+}
+
+.container{
+    width: 90%;
+    margin:0 auto;
+    padding: 0px 0;
+    overflow: hidden;
+}
+
+
+.top__ciudad{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 100px
+}
+
+.ciudad{
+    width: 100%;
+    height: 520px;
+    translate: 0px -25%;
+}
+
+.imagenes__top{
+    text-align: center;
+    translate: -122px 10px;
+    height: 120px;
+    
+    }
+
+.Imagen__presentation{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit:cover;
+    object-position: 0px -25px;
+    
+    
+}
+
+
+.links__top{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px 20px;    
+}
+
+.nav__icon__top{
+    background: linear-gradient(170deg,var(--color-third) 10%,var(--color-primary) 80%);
+    padding: 6px 10px;
+    border-radius: 30%;
+    margin: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.Medium{
+    translate: 0px 70%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.titulos__top{  
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0px;
+    color: #ffffff;
+}
+
+.titulo__top{
+    font-family: 'Bebas Neue', sans-serif;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    translate: 0px 15px;
+    text-shadow:3px 3px  2px #000;
+    color: #eee;
+}
+
+.subtitle1__top{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    padding-top: 0px;
+    margin-top: 0px;
+    translate: 0px 5px;
+    text-shadow:3px 3px  2px #000;
+
+}
+
+.subtitle2__top{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow:1px 1px  3px #aaa;
+    color: #000;
+    translate: 0px 5px;
+}
+
+.footer{
+    margin-top: 0px;
+    padding-top: 0px;
+    translate: 0px 170px;
+    text-align: center;
+    text-decoration: none;
+    height: 0px;
+       }

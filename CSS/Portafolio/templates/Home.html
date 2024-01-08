@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro Corona</title>
+    <title> Alejandro Corona|Electronic Engineer</title>
     <link rel="stylesheet" href="{{url_for('static',filename = 'css/normalize.css')}}">
     <link rel="stylesheet" href="{{url_for('static',filename = 'css/estilos.css')}}">
 
@@ -12,37 +12,50 @@
 
 <body>
     <header class="top">
-        <div class="container links__top">
+        <div class="imagenes__top">
+        <section class="top__cta">
+            <nav class="top__cta__button">
+                <a href="#" class="contactame">Contactame!</a>
+            </nav>
+        </section>
+        <div>
+            <img src="{{url_for('static',filename = 'img/Me.jpg')}}" class="Imagen__presentation">
+        
+        </div>
+        </div>
+        <div class="top__ciudad">
+            <img src="{{url_for('static', filename = 'img/Ciudad.png')}}" class="ciudad">
+        </div>
+    </header>
+
+    <main class="Medium">
+        
+        <section class="container titulos__top">
+            <h1 class="titulo__top">Alejandro Corona</h1>
+            <p class="subtitle1__top">Electronic engineer</p>
+            <p class="subtitle2__top">Passionate about the software development field, hoping to become a great full-stack developer someday.</p>
+        </section>
+
+        <section class="container links__top">
             <nav class="nav__top">
                 <a href="#" class="nav__icon__top">About me</a>
                 <a href="#" class="nav__icon__top">Skills</a>
                 <a href="#" class="nav__icon__top">Projects</a>                
 
             </nav>
-        </div>
-        <div class="imagenes__top">
-            <img src="{{url_for('static',filename = 'img/Me.jpg')}}">
-        </div>
-        <div class="container titulos__top">
-            <h1 class="titulo__top">Alejandro Corona</h1>
-            <p class="Subtitle__top">Electronic engineer</p>
-            <p class="subtitle__top">Passionate about the software development field, hoping to become a great full-stack developer someday.</p>
-        </div>
-        <div class="container redes__top">
-            <nav class="nav__top redes">
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container__redes">
+            <nav class="nav__redes">
                 <a href="https://github.com/AlejandroCorona02" class="fa-brands fa-github" target="_blank"></a>
                 <a href="https://www.linkedin.com/in/alejandro-corona-852907270/" class="fa-brands fa-linkedin" target="_blank"></a>
                 <a href="https://twitter.com/AlexCorona02" class="fa-brands fa-twitter" target="_blank"></a>
             </nav>
         </div>
-
-        
-    </header>
-
-    <main class="main"></main>
-    
-    <footer class="footer"></footer>
+    </footer>
 
     <script src="https://kit.fontawesome.com/d0d107786b.js" crossorigin="anonymous"></script>
 </body>
-

@@ -344,15 +344,3 @@ body {
     color:inherit;
     line-height: 55px;
  }
-
- /*Responsive design*/
-
-@media screen and (max-width:800px){
-    :root{
-        --boton-padding: 18px 40px;
-    }
-    
-    .nav {
-        justify-content: space-around;
-    }
-}
