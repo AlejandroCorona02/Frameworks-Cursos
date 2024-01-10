@@ -1,30 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 :root{
     --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
     --color-primary:#f82f4a7e;
-    --color-secundary:#460a1798;
+    --color-secundary:#ee3333;
     --color-third:#ff5555;
     --boton-padding: 20px 40px;
-}
-
-
-
-.top__cta__button{
-    text-align: right;
-    translate: 76px 7px;
-    color: #000;
-    text-decoration: none;      
-}
-
-.contactame{
-    border: 1px solid var(--color-secundary);
-    border-radius: 10%;
-    padding: 8px 8px;
-    width: 100px;
-    background:linear-gradient(165deg,var(--color-secundary) 10%,var(--color-primary) 100%);
-    color: #ffffff;
-    text-decoration: inherit;
+    --color-M-1:#7900ff;
+    --color-fourth:#ff00ff;
 }
 
 .container{
@@ -35,24 +19,38 @@
 }
 
 
-.top__ciudad{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    height: 100px
-}
-
-.ciudad{
-    width: 100%;
-    height: 520px;
-    translate: 0px -25%;
+.top{
+    translate: 0px 80px;
 }
 
 .imagenes__top{
     text-align: center;
-    translate: -122px 10px;
     height: 120px;
     
-    }
+}
+
+
+
+.top__cta__button{
+    text-align: right;
+    text-decoration: none;      
+    translate: -10px -55px;
+    
+}
+
+.contactame{
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 10%;
+    padding: 8px 8px;
+    width: 100px;
+    background:linear-gradient(165deg,var(--color-secundary) 10%,var(--color-primary) 100%);
+    color: #ffffff;
+    text-shadow:1px 1px 1px #000;
+    border:
+    
+}
+
+P
 
 .Imagen__presentation{
     width: 240px;
@@ -65,33 +63,25 @@
     
 }
 
+.Img{
+    background-image:url('../img/Ciudad.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-.links__top{
-    margin-top: 10px;
-    text-align: center;
-    padding: 20px 20px;    
-}
-
-.nav__icon__top{
-    background: linear-gradient(170deg,var(--color-third) 10%,var(--color-primary) 80%);
-    padding: 6px 10px;
-    border-radius: 30%;
-    margin: 20px 20px 20px 20px;
-    text-decoration: none;
-    color: #000;
 }
 
 .Medium{
-    translate: 0px 70%;
+    translate: 0px 158px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    
 }
 
 .titulos__top{  
     font-size: 1.8rem;
     text-align: center;
     margin-top: 0px;
-    color: #ffffff;
 }
 
 .titulo__top{
@@ -100,26 +90,30 @@
     margin-bottom: 0px;
     translate: 0px 15px;
     text-shadow:3px 3px  2px #000;
-    color: #eee;
+    color: var(--color-secundary);
+    
 }
 
 .subtitle1__top{
     font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
     font-size: 2rem;
     padding-top: 0px;
     margin-top: 0px;
     translate: 0px 5px;
-    text-shadow:3px 3px  2px #000;
-
+    text-shadow:1px 1px  1px #333;
+    color: #0f0f0f;
 }
 
 .subtitle2__top{
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
-    text-shadow:1px 1px  3px #aaa;
-    color: #000;
+    /*text-shadow:1px 1px  1px #333;*/
+    color: #0a0a0a;
     translate: 0px 5px;
+    margin-bottom: 5px;
 }
 
 .footer{
@@ -129,4 +123,22 @@
     text-align: center;
     text-decoration: none;
     height: 0px;
-       }
+    
+}
+
+.links__top{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px 20px;
+}
+    
+.nav__icon__top{
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: #fafafa;
+    background: linear-gradient(170deg,var(--color-third) 30%,var(--color-primary) 70%);
+    padding: 6px 10px;
+    border-radius: 30%;
+    margin: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: #000;
+}
