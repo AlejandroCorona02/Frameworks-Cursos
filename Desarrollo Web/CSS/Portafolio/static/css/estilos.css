@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root{
     --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
@@ -46,11 +46,10 @@
     background:linear-gradient(165deg,var(--color-secundary) 10%,var(--color-primary) 100%);
     color: #ffffff;
     text-shadow:1px 1px 1px #000;
-    border:
-    
-}
-
-P
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+    }
 
 .Imagen__presentation{
     width: 240px;
@@ -110,21 +109,12 @@ P
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    /*text-shadow:1px 1px  1px #333;*/
+    text-shadow:1px 1px  1px #333;
     color: #0a0a0a;
     translate: 0px 5px;
     margin-bottom: 5px;
 }
 
-.footer{
-    margin-top: 0px;
-    padding-top: 0px;
-    translate: 0px 170px;
-    text-align: center;
-    text-decoration: none;
-    height: 0px;
-    
-}
 
 .links__top{
     margin-top: 10px;
@@ -141,4 +131,39 @@ P
     margin: 20px 20px 20px 20px;
     text-decoration: none;
     color: #000;
+    text-shadow:1px 1px 1px white;
+    font-size: large;
+    font-weight: 500;
 }
+
+.footer{
+    margin-top: 0px;
+    padding-top: 0px;
+    translate: 0px 155px;
+    text-align: center;
+    text-decoration: none;
+        
+}
+
+.container__redes{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0%;
+    
+}
+
+.nav__redes{
+    object-position: center;
+    padding-bottom: 9.3%;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5%;
+}
+
+.fa-brands{
+    line-height: 55px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    padding: 10px 10px;
+    }
