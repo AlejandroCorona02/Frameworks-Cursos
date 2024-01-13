@@ -137,22 +137,27 @@
     
 .nav__icon__top{
     font-family: 'Quicksand', sans-serif;
-    text-shadow: #fafafa;
-    background: linear-gradient(170deg,var(--cinnabar-700) 30%,var(--cinnabar-500) 70%);
+    font-size: large;
+    font-weight: 500;
+    background: linear-gradient(170deg,var(--cinnabar-300) 30%,var(--cinnabar-100) 70%);
     padding: 6px 10px;
     border-radius: 30%;
     margin: 20px 20px 20px 20px;
     text-decoration: none;
-    color: #000;
+    color: var(--cinnabar-700);
     text-shadow:1px 1px 1px white;
-    font-size: large;
-    font-weight: 500;
+    transition: all 1s ease-in-out;
 }
+
+.nav__icon__top:hover{
+    background: linear-gradient(170deg,var(--cinnabar-600) 30%,var(--cinnabar-400) 70%);
+    color:#000;
+    }
 
 .footer{
     margin-top: 0px;
     padding-top: 0px;
-    translate: 0px 190px;
+    translate: 0px 130px;
     text-align: center;
     text-decoration: none;
     overflow: hidden;
@@ -177,7 +182,9 @@
     font-size: 130%;
     border-radius: 50%;
     background-color: var(--cinnabar-200);
-    transition: transform 1.4s ease-in-out, box-shadow 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out, background-color 1s ease-in-out;
+    transition: all 1.4s ease-in-out;
+    translate: 0px 50px;
+    margin-bottom: 0px;
 }
 
 .fa-square-x-twitter:hover{
@@ -229,4 +236,46 @@
     padding: 10px 10px;  
     transform: rotate(360deg);
     cursor: pointer;
+}
+
+.redes__letras{
+    translate: 0px 0px;
+    font-family: 'Quicksand', sans-serif ;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-top:0%;
+    transition: all 1s ease-in-out;
+}
+
+.git:hover{
+    color: var(--cinnabar-700);
+}
+
+.git{
+    text-align: left;
+    translate: 260px 38px;
+    color: #fff;
+
+}
+
+.linkedin:hover{
+    color: var(--cinnabar-700);
+}
+
+.linkedin{
+    text-align: center;
+    padding-top: 0px;
+    translate: -35px -200px;
+        
+}
+
+.twitter:hover{
+    color: var(--cinnabar-700);
+}
+
+.twitter{
+    text-align: right;
+    translate: -220px -40px;
+    margin: 0px 0px 0px 0px;
 }
