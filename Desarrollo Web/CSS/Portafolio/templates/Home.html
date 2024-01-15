@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Alejandro Corona|Electronic Engineer</title>
+    <title> Alejandro Corona | Home</title>
     <link rel="stylesheet" href="{{url_for('static',filename = 'css/normalize.css')}}">
     <link rel="stylesheet" href="{{url_for('static',filename = 'css/estilos.css')}}">
-
-
 </head>
 
 <body>
@@ -35,7 +33,7 @@
 
         <section class="container links__top">
             <nav class="nav__top">
-                <a href="#" class="nav__icon__top">About me</a>
+                <a href="{{url_for('AboutMe')}}" class="nav__icon__top">About me</a>
                 <a href="#" class="nav__icon__top">Skills</a>
                 <a href="#" class="nav__icon__top">Projects</a>                
 
@@ -47,16 +45,19 @@
     <footer class="footer">
         <div class="container__redes">
             <nav class="nav__redes">
+                <div class="git_anidado">
                 <a href="https://github.com/AlejandroCorona02" class="fa-brands fa-github" target="_blank"></a>
+                <p class="git">Conoce mi avance!</p>
+                </div>
+                <div class="link_anidado">
                 <a href="https://www.linkedin.com/in/alejandro-corona-852907270/" class="fa-brands fa-linkedin" target="_blank"></a>
+                <p class="linkedin"><br>¿Te interesa trabajar conmigo?</p>
+                </div>
+                <div class="x_anidado">
                 <a href="https://twitter.com/AlexCorona02" class="fa-brands fa-square-x-twitter" target="_blank"></a>
+                <p class="twitter"><br>Revisa mis actualizaciones!</p>
+                </div>
             </nav>
-        </div>
-        <div class="redes__letras">
-        <p class="git">Conoce mi avance!</p>
-        <p class="linkedin"><br></p>¿Te interesa trabajar conmigo?</p>
-        <p class="twitter"><br>Revisa mis actualizaciones!</p>
-        
         </div>
     </footer>
 

@@ -31,7 +31,6 @@
     overflow: hidden;
 }
 
-
 .top{
     translate: 0px 80px;
 }
@@ -41,8 +40,6 @@
     height: 120px;
     
 }
-
-
 
 .top__cta__button{
     text-align: right;
@@ -128,7 +125,6 @@
     margin-bottom: 5px;
 }
 
-
 .links__top{
     margin-top: 10px;
     text-align: center;
@@ -152,7 +148,7 @@
 .nav__icon__top:hover{
     background: linear-gradient(170deg,var(--cinnabar-600) 30%,var(--cinnabar-400) 70%);
     color:#000;
-    }
+}
 
 .footer{
     margin-top: 0px;
@@ -170,12 +166,15 @@
 
 .nav__redes{
     object-position: center;
-    padding-bottom: 4%;
+    padding-bottom: 7%;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
     padding-top: 40px;
     height: 0px;
+    font-family: 'Quicksand', sans-serif ;
+    color: var(--cinnabar-700);
+
 }
 
 .fa-brands{
@@ -194,7 +193,7 @@
     color: #000;
     border-color: #000;
     background-color: #fff;
-            }
+}
 
 .fa-square-x-twitter{
     border:1px solid var(--cinnabar-700);
@@ -219,6 +218,7 @@
     padding: 10px 10px;  
     transform: rotate(360deg);
     cursor: pointer;
+    translate: 0px 40px;
 }
 
 .fa-linkedin:hover{
@@ -238,44 +238,43 @@
     cursor: pointer;
 }
 
-.redes__letras{
-    translate: 0px 0px;
-    font-family: 'Quicksand', sans-serif ;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-top:0%;
-    transition: all 1s ease-in-out;
-}
+.git_anidado:hover{
+    color:#559;
+    }
 
-.git:hover{
-    color: var(--cinnabar-700);
+.git_anidado{
+    color:#fff;
+    transition: color 2s ease-in-out;
 }
 
 .git{
     text-align: left;
-    translate: 260px 38px;
-    color: #fff;
-
+    translate: 0px 44px;
 }
 
-.linkedin:hover{
-    color: var(--cinnabar-700);
+.link_anidado:hover{
+    color:#009;
+}
+
+.link_anidado{
+    color:#fff;
+    transition: color 3s ease-in-out;
 }
 
 .linkedin{
-    text-align: center;
-    padding-top: 0px;
-    translate: -35px -200px;
-        
+    translate: 0px 35px;
 }
 
-.twitter:hover{
-    color: var(--cinnabar-700);
+.x_anidado:hover{
+    color:#000;
+}
+
+.x_anidado{
+    color:#fff;
+    transition: color 3s ease-in-out;
 }
 
 .twitter{
     text-align: right;
-    translate: -220px -40px;
-    margin: 0px 0px 0px 0px;
+    translate: 0px 35px;
 }
