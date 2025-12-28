@@ -19,6 +19,8 @@ Modo depurador es para que los cambios se vean de manera real en el servidor asi
 
 En las url se puede enviar informacion de todo tipo no necesariamente tiene que ser solo texto podemos hacer uso de los datos de html que nos arroja la misma pagina logrando mandar datos tales como un pie de pagina, un titulo o cualquier cosa siempre y cuando sea datos de html, tambien podemos tener varias rutas que manden llamar o usean la misma definicion asi usando el mismo texto para distintas url
 
+En esta direccion: https://github.com/AlejandroCorona02/Frameworks-Cursos/blob/main/Flask/app/Comandos.txt Puedes ver los comandos necesarios para trabjar con el programa
+
 
 ## VARIABLES
 
